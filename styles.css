@@ -47,3 +47,29 @@ body {
 #testimonial-5 {
   background-color: #fff;
 }
+
+@media screen and (min-width: 576px) {
+  #testimonial-grid-container {
+    display: flex;
+  }
+
+  #testimonial-5 {
+    flex: 25%;
+  }
+
+  #main-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #top {
+    display: flex;
+    flex-basis: 50%;
+  }
+  
+  #bottom {
+    display: flex;
+    flex-basis: 50%;
+  }
+
+}
