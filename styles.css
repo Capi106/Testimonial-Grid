@@ -49,27 +49,44 @@ body {
 }
 
 @media screen and (min-width: 576px) {
-  #testimonial-grid-container {
+  
+  #testimonial-grid-container,
+  #main-left,
+  #top,
+  #bottom {
     display: flex;
+  }
+
+  #testimonial-grid-container {
+    margin: 0 auto;
+    max-width: 900px;
   }
 
   #testimonial-5 {
-    flex: 25%;
-  }
-
-  #main-left {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #top {
-    display: flex;
-    flex-basis: 50%;
+    flex-basis: 25%;
   }
   
+  #main-left {
+    flex-direction: column;
+    flex-basis: 75%;
+  }
+
+  #main-left .grid-item {
+    margin-right: 20px;
+  }
+
+  #top,
   #bottom {
-    display: flex;
     flex-basis: 50%;
   }
 
+  #testimonial-1,
+  #testimonial-4 {
+    flex-basis: 65%;
+  }
+  
+  #testimonial-2,
+  #testimonial-3 {
+    flex-basis: 35%;
+  }
 }
